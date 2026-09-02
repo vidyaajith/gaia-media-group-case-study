@@ -220,19 +220,17 @@
 
   .stat:last-child{border-right:none}
 
-  .stat .n{font-family:var(--serif);font-size:clamp(36px,5vw,62px);line-height:1;letter-spacing:-.02em;display:flex;align-items:center;gap:14px;margin-bottom:10px}
+  .stat .sic{width:26px;height:26px;margin-bottom:16px;display:block}
 
-  .stat .n span{color:var(--gold)}
+  .stat .n{font-family:var(--serif);font-size:clamp(32px,4.4vw,52px);line-height:1;letter-spacing:-.02em;margin-bottom:12px;color:var(--gold)}
 
   .stat.up .n{color:var(--green)}
 
-  .stat.up .n span{color:var(--green)}
+  .stat .lbl{font-size:clamp(15px,1.6vw,17px);font-weight:500;color:var(--paper);margin-bottom:6px}
 
-  .stat .l{font-size:clamp(13px,1.4vw,15px);letter-spacing:.05em;color:var(--paper-faint);line-height:1.45;max-width:22ch}
+  .stat .tag{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-faint);margin-bottom:14px}
 
-  .uparrow{width:clamp(16px,1.8vw,22px);height:auto;flex-shrink:0}
-
-  .spark{display:block;margin-top:14px;width:100%;max-width:180px;height:auto}
+  .stat .l{font-size:clamp(13px,1.4vw,15px);color:var(--paper-dim);line-height:1.55;max-width:26ch}
 
 
 
@@ -626,33 +624,21 @@
 
       <div class="stat up rv">
 
-        <div class="n">
+        <svg class="sic" viewBox="0 0 24 24" fill="none" aria-hidden="true">
 
-          <svg class="uparrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 19V5" stroke="#5FD08A" stroke-width="2" stroke-linecap="round"/>
 
-            <path d="M12 19V5" stroke="#5FD08A" stroke-width="2.2" stroke-linecap="round"/>
-
-            <path d="M6 11l6-6 6 6" stroke="#5FD08A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-
-          </svg>
-
-          <span>+50%</span>
-
-        </div>
-
-        <div class="l">Increase in team productivity</div>
-
-        <svg class="spark" viewBox="0 0 180 44" fill="none" aria-hidden="true">
-
-          <path d="M2 38 C 26 36, 44 34, 62 30 S 100 24, 122 16 S 158 6, 178 3" stroke="#5FD08A" stroke-width="2" stroke-linecap="round"/>
-
-          <path d="M2 38 C 26 36, 44 34, 62 30 S 100 24, 122 16 S 158 6, 178 3 L178 44 L2 44Z" fill="url(#sg)" opacity=".35"/>
-
-          <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5FD08A" stop-opacity=".7"/><stop offset="1" stop-color="#5FD08A" stop-opacity="0"/></linearGradient></defs>
-
-          <circle cx="178" cy="3" r="3.2" fill="#5FD08A"/>
+          <path d="M6 11l6-6 6 6" stroke="#5FD08A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
         </svg>
+
+        <div class="n">+50%</div>
+
+        <div class="lbl">Team productivity</div>
+
+        <div class="tag">Measured over three weeks</div>
+
+        <p class="l">Increase in team productivity within three weeks of the new system going live.</p>
 
       </div>
 
@@ -660,17 +646,21 @@
 
       <div class="stat rv">
 
-        <div class="n"><span>90%</span></div>
+        <svg class="sic" viewBox="0 0 24 24" fill="none" aria-hidden="true">
 
-        <div class="l">On-time delivery rate</div>
+          <circle cx="12" cy="12" r="9" stroke="#D9A94C" stroke-width="1.7"/>
 
-        <svg class="spark" viewBox="0 0 180 44" fill="none" aria-hidden="true">
-
-          <rect x="2" y="22" width="176" height="8" rx="4" fill="rgba(255,255,255,.08)"/>
-
-          <rect class="grow" x="2" y="22" width="158" height="8" rx="4" fill="#D9A94C" style="transform-origin:center"/>
+          <path d="M8 12.3l2.6 2.6L16 9" stroke="#D9A94C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
 
         </svg>
+
+        <div class="n">90%</div>
+
+        <div class="lbl">On-time delivery</div>
+
+        <div class="tag">Replacing missed deadlines</div>
+
+        <p class="l">On-time delivery rate, the target set for every account manager.</p>
 
       </div>
 
@@ -678,21 +668,23 @@
 
       <div class="stat rv">
 
-        <div class="n"><span>30+</span></div>
+        <svg class="sic" viewBox="0 0 24 24" fill="none" aria-hidden="true">
 
-        <div class="l">Client accounts brought into one system</div>
+          <path d="M9 15l6-6" stroke="#D9A94C" stroke-width="1.7" stroke-linecap="round"/>
 
-        <svg class="spark" viewBox="0 0 180 44" fill="none" aria-hidden="true">
+          <path d="M10.3 6.3l1-1a3.5 3.5 0 0 1 5 5l-1 1" stroke="#D9A94C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
 
-          <g fill="rgba(217,169,76,.55)">
-
-            <circle cx="8" cy="14" r="3.2"/><circle cx="26" cy="14" r="3.2"/><circle cx="44" cy="14" r="3.2"/><circle cx="62" cy="14" r="3.2"/><circle cx="80" cy="14" r="3.2"/><circle cx="98" cy="14" r="3.2"/><circle cx="116" cy="14" r="3.2"/><circle cx="134" cy="14" r="3.2"/><circle cx="152" cy="14" r="3.2"/><circle cx="170" cy="14" r="3.2"/>
-
-            <circle cx="8" cy="30" r="3.2"/><circle cx="26" cy="30" r="3.2"/><circle cx="44" cy="30" r="3.2"/><circle cx="62" cy="30" r="3.2"/><circle cx="80" cy="30" r="3.2"/><circle cx="98" cy="30" r="3.2"/><circle cx="116" cy="30" r="3.2"/><circle cx="134" cy="30" r="3.2"/><circle cx="152" cy="30" r="3.2"/><circle cx="170" cy="30" r="3.2"/>
-
-          </g>
+          <path d="M13.7 17.7l-1 1a3.5 3.5 0 0 1-5-5l1-1" stroke="#D9A94C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
 
         </svg>
+
+        <div class="n">30+</div>
+
+        <div class="lbl">Client accounts</div>
+
+        <div class="tag">Brought into one system</div>
+
+        <p class="l">Every account run through the same standardized process.</p>
 
       </div>
 
