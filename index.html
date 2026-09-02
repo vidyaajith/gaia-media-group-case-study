@@ -406,6 +406,14 @@
 
   .imgslot .s{font-size:12px;color:var(--paper-faint);font-family:ui-monospace,Menlo,monospace}
 
+  .shot{margin-top:26px;border:1px solid var(--line);border-radius:6px;background:var(--ink-2);overflow:hidden}
+  .shot img{display:block;width:100%;height:auto}
+  .shot .cap{
+    font-size:clamp(12px,1.3vw,14px);letter-spacing:.16em;text-transform:uppercase;color:var(--paper-faint);
+    padding:14px clamp(16px,2.1vw,26px);display:flex;align-items:center;gap:10px;border-top:1px solid var(--line);
+  }
+  .shot .cap::before{content:'';width:16px;height:1px;background:var(--gold);flex-shrink:0}
+
 
 
   /* ── results ────────────────────────────── */
@@ -830,6 +838,16 @@
 
 
 
+    <div class="shot rv">
+
+      <img src="approach-system-map-v2.png" alt="Current-state system map showing where work stopped across sales, onboarding, delivery and reporting">
+
+      <div class="cap">The audit: every step mapped from 12 interviews</div>
+
+    </div>
+
+
+
     <div class="leak rv">
 
       <svg class="ico" viewBox="0 0 24 24" style="width:34px;height:34px;stroke-width:1.2"><path d="M12 2.7s6 5.9 6 10a6 6 0 0 1-12 0c0-4.1 6-10 6-10Z"/><path d="M9.4 13.6a2.8 2.8 0 0 0 2.6 3"/></svg>
@@ -944,15 +962,11 @@
 
 
 
-        <div class="imgslot">
+        <div class="shot">
 
-          <svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <img src="step01-clickup-list-view-v2.png" alt="ClickUp project template with owners, priority and due dates">
 
-          <span class="k">Image Placeholder</span>
-
-          <span class="n">ClickUp project template</span>
-
-          <span class="s">img-01-clickup-template.png · 16:9 · 1600×900</span>
+          <div class="cap">ClickUp onboarding template, live in the client's workspace</div>
 
         </div>
 
@@ -1029,6 +1043,16 @@
           </svg>
 
           <div class="cap">A rhythm the team could actually keep</div>
+
+        </div>
+
+
+
+        <div class="shot">
+
+          <img src="step02-weekly-meeting-agenda_v2.png" alt="Weekly delivery meeting agenda template, timeboxed with named owners">
+
+          <div class="cap">The standing agenda that made the cadence stick</div>
 
         </div>
 
@@ -1132,6 +1156,16 @@
 
 
 
+        <div class="shot">
+
+          <img src="step03-client-onboarding-sop-v2.png" alt="Client onboarding SOP document with step-by-step instructions">
+
+          <div class="cap">One of the SOPs, written so anyone could run it</div>
+
+        </div>
+
+
+
         <ul class="bullets">
 
           <li><svg class="ico" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg><span><b>Documented core workflows</b>Turned the standardized process into written SOPs for onboarding, delivery, and reporting.</span></li>
@@ -1177,6 +1211,16 @@
           </svg>
 
           <span class="t">On-time delivery rate, the target set for every account manager.</span>
+
+        </div>
+
+
+
+        <div class="shot">
+
+          <img src="step04-delivery-scorecard-v2.png" alt="Delivery scorecard showing on-time delivery, cycle time and deliverables shipped by owner">
+
+          <div class="cap">Each KPI tracked live, by owner, against target</div>
 
         </div>
 
@@ -1280,15 +1324,11 @@
 
 
 
-        <div class="imgslot">
+        <div class="shot">
 
-          <svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <img src="step05-leadership-dashboard-v2.png" alt="Leadership dashboard showing on-time delivery, overdue tasks and open work by client">
 
-          <span class="k">Image Placeholder</span>
-
-          <span class="n">ClickUp leadership dashboard</span>
-
-          <span class="s">img-02-clickup-dashboard.png · 16:9 · 1600×900</span>
+          <div class="cap">The founder's dashboard, self-serve and always current</div>
 
         </div>
 
@@ -1373,6 +1413,16 @@
           </svg>
 
           <div class="cap">Hand-offs stopped waiting on someone to remember</div>
+
+        </div>
+
+
+
+        <div class="shot">
+
+          <img src="step06-automation-config-v2.png" alt="Automation configuration: status change trigger creating a follow-up task">
+
+          <div class="cap">One of the automations, replacing a manual hand-off</div>
 
         </div>
 
