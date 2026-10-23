@@ -238,20 +238,6 @@
 
   .ill{display:block;width:100%;height:auto}
 
-  .figure{border:1px solid var(--line);border-radius:6px;background:var(--ink-2);padding:clamp(16px,2.1vw,26px);position:relative;overflow:hidden}
-
-  .figure .cap{
-
-    font-size:clamp(12px,1.3vw,14px);letter-spacing:.16em;text-transform:uppercase;color:var(--paper-faint);
-
-    margin-top:14px;display:flex;align-items:center;gap:10px;
-
-  }
-
-  .figure .cap::before{content:'';width:16px;height:1px;background:var(--gold)}
-
-
-
   .draw path,.draw line,.draw circle,.draw rect,.draw polyline{
 
     stroke-dasharray:var(--len,600);stroke-dashoffset:var(--len,600);
@@ -1230,78 +1216,6 @@
         <p>Clients previously at risk of churning, kept.</p>
 
       </div>
-
-    </div>
-
-
-
-    <!-- ordered system diagram -->
-
-    <div class="figure rv" style="margin-top:40px">
-
-      <svg class="ill" viewBox="0 0 900 260" fill="none" aria-label="After: one operating system between the founder and the accounts">
-
-        <g class="fadein">
-
-          <rect x="366" y="18" width="168" height="42" rx="8" fill="rgba(95,208,138,.1)" stroke="rgba(95,208,138,.45)"/>
-
-          <text x="450" y="44" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" letter-spacing="2" fill="#5FD08A">FOUNDER</text>
-
-        </g>
-
-        <g class="draw" style="--len:120" stroke="rgba(95,208,138,.5)" stroke-width="1.4"><path d="M450 60v30"/></g>
-
-        <g class="fadein" style="transition-delay:.3s">
-
-          <rect x="90" y="90" width="720" height="52" rx="10" fill="rgba(217,169,76,.09)" stroke="rgba(217,169,76,.45)"/>
-
-          <text x="450" y="112" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" letter-spacing="2.4" fill="#D9A94C">THE OPERATING SYSTEM</text>
-
-          <text x="450" y="130" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" letter-spacing="1.4" fill="rgba(242,238,230,.45)">PM STANDARD · CADENCE · SOPs · KPIs · DASHBOARD · AUTOMATION</text>
-
-        </g>
-
-        <g class="draw" style="--len:120" stroke="rgba(217,169,76,.4)" stroke-width="1.2">
-
-          <path d="M150 142v34"/><path d="M270 142v34"/><path d="M390 142v34"/><path d="M510 142v34"/><path d="M630 142v34"/><path d="M750 142v34"/>
-
-        </g>
-
-        <g class="fadein" style="transition-delay:.55s">
-
-          <g fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.14)">
-
-            <rect x="106" y="176" width="88" height="42" rx="6"/><rect x="226" y="176" width="88" height="42" rx="6"/>
-
-            <rect x="346" y="176" width="88" height="42" rx="6"/><rect x="466" y="176" width="88" height="42" rx="6"/>
-
-            <rect x="586" y="176" width="88" height="42" rx="6"/><rect x="706" y="176" width="88" height="42" rx="6"/>
-
-          </g>
-
-          <g fill="rgba(242,238,230,.22)">
-
-            <rect x="120" y="190" width="46" height="6" rx="3"/><rect x="120" y="202" width="30" height="6" rx="3"/>
-
-            <rect x="240" y="190" width="46" height="6" rx="3"/><rect x="240" y="202" width="34" height="6" rx="3"/>
-
-            <rect x="360" y="190" width="46" height="6" rx="3"/><rect x="360" y="202" width="28" height="6" rx="3"/>
-
-            <rect x="480" y="190" width="46" height="6" rx="3"/><rect x="480" y="202" width="36" height="6" rx="3"/>
-
-            <rect x="600" y="190" width="46" height="6" rx="3"/><rect x="600" y="202" width="26" height="6" rx="3"/>
-
-            <rect x="720" y="190" width="46" height="6" rx="3"/><rect x="720" y="202" width="38" height="6" rx="3"/>
-
-          </g>
-
-          <text x="450" y="246" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" letter-spacing="2" fill="rgba(242,238,230,.3)">30+ CLIENT ACCOUNTS</text>
-
-        </g>
-
-      </svg>
-
-      <div class="cap">After: the system sits between the founder and the work</div>
 
     </div>
 
